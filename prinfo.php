@@ -3,9 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>CLient info</title>
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
+	<ul class="navbar">
+    <?php include 'menu.php';?>
+    <br>  
+    </ul>
 <?php
 $prid = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT) or die('missing parameter');
    
@@ -32,5 +39,4 @@ while($stmt->fetch()){
 ?>
 </ul>
 
-</body>
-</html>
+	<?php require 'footer.php';?>
