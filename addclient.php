@@ -12,7 +12,8 @@
     <?php include 'menu.php';?>
     <br>  
     </ul>
-
+	
+    <article>
 	<?php
     $clname = filter_input(INPUT_POST, 'clname') or die('missing parameter');
     $claddress = filter_input(INPUT_POST, 'claddress') or die('missing parameter');
@@ -25,11 +26,12 @@
     $stmt = $link->prepare($sql);
     $stmt->bind_param('ssisi', $clname, $claddress, $clnumb, $clconname, $clzip);
     $stmt->execute();
-    ?>
+       echo 'Client added to DB';
+     ?>
+     <br><br>
+    <a href="clientlist.php">Back to clientlist</a> 
 
-Client added to DB
-
-<a href="clientlist.php">Back to clientlist</a> 
-
-
+	</article>
+    
+    <br><br>
 	<?php require 'footer.php';?>

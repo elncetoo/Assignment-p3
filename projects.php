@@ -26,9 +26,7 @@
             }
             ?>
             </p>
-            
-            <button class="button"><a href="editform.php?prid=<?=$prid?>">Edit Project</a></button>
-            
+                        
         </article>
 
 

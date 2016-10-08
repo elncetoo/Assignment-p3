@@ -26,9 +26,9 @@
     //	echo $stmt->error;
     }
     ?>
-<hr>
-<a href="clientlist.php">Back to Clientlist</a><br>
-</body>
-</html>
+    <hr>
+    <a href="clientlist.php">Back to Clientlist</a><br>
+    </body>
+    </html>
 
 	<?php require 'footer.php';?>

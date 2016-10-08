@@ -22,13 +22,14 @@
 		$stmt->execute();
 		$stmt->bind_result($prname);
 		while ($stmt->fetch()) {}
-		echo 'Project Name:'.$prname;
+		echo 'Project Name:   '.$prname;
     ?>
     
-    <form method="post" action="editpr.php">
+    <form method="post" action="editpr.php" >
+    	
         <input type="hidden" name="prid" value="<?=$prid?>" align="left">
-        New Name: <input type="text" name="prname" placeholder="New Name" value="<?=$prname?>" />
-        <input type="submit" name="action" value="submit" />
+        <input type="text" name="prname" placeholder="Enter New Name:" value="<?=$prname?>" />
+        <input type="submit" name="action" value="Update Name" style="margin-left: 40%"/>
     </form>
 </article>
 	<?php require 'footer.php';?>
