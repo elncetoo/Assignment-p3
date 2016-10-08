@@ -39,4 +39,7 @@ while($stmt->fetch()){
 ?>
 </ul>
 
+<button class="button"><a href="editform.php?prid=<?=$prid?>">Edit Project</a></button>
+
+
 	<?php require 'footer.php';?>

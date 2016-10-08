@@ -12,7 +12,7 @@
     <?php include 'menu.php';?>
     <br>  
     </ul>
-        <article class="article" style="link-decoration: none;">
+        <article class="article" style="link-decoration: none; margin:6%;">
         <h1 >Project list:</h1>
            <p> 
            <?php

@@ -25,16 +25,16 @@
     }
     ?>
 </ul>
-
+<hr>
 <form method="post" action="addclient.php">
 	New Name: <input type="text" name="clname" placeholder="New Name"/>
     New address: <input type="text" name="claddress" placeholder="New adress"/>
-    New nub: <input type="text" name="clnumb" placeholder="New number"/>
-    New conname: <input type="text" name="clconname" placeholder="New conname"/>
+    New Number: <input type="text" name="clnumb" placeholder="New number"/>
+    Contact Name: <input type="text" name="clconname" placeholder="New contact name"/>
     New zip: <input type="text" name="clzip" placeholder="New zip"/>
     <input type="submit" name="action" value="Add to client" />
 </form>
-
+<hr>
 <h2>DELETE CLIENT</h2>
  <form action="deleteclient.php" method="post">
  <select name="cid">
@@ -50,5 +50,5 @@
  <input type="submit" value="Delete">
  </select>
  </form>
-
+<br><br><br><br><br><br>
 	<?php require 'footer.php';?>

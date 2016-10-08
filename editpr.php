@@ -3,9 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Edited Project</title>
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+	<ul class="navbar">
+    <?php include 'menu.php';?>
+    <br>  
+    </ul>
 
 
 <?php
@@ -18,10 +24,14 @@ $stmt->bind_param('si', $prname, $prid);
 $stmt->execute();
 if ($stmt->affected_rows > 0){
 	echo 'Name updated...';
-}
-?>
-<hr>
-<a href="prinfo.php?prid=<?=$prid?>"><?=$prname?></a>
+	}
+	else {
+		echo 'Something went wrong...';
+      }
+    ?>
+   
 
-</body>
-</html>
+<hr>
+<a href="projects.php">Back to projects</a> 
+
+	<?php require 'footer.php';?>
